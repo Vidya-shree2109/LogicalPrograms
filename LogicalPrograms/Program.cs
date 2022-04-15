@@ -8,7 +8,7 @@ namespace LogicalPrograms
         {
             Console.WriteLine("----------Welcome To Basic Programs----------");
             bool finish = true;
-            Console.WriteLine("\n1.Fibonacci Series\n2.Perfect Number\n3.End the program");
+            Console.WriteLine("\n1.Fibonacci Series\n2.Perfect Number\n3.Prime Number\n4.End the program");
             while (finish)
             {
                 Console.Write("\nEnter an option to execute :");
@@ -24,6 +24,10 @@ namespace LogicalPrograms
                         number.Perfect();
                         break;
                     case 3:
+                        PrimeNumber prime = new PrimeNumber();
+                        prime.Prime();
+                        break;
+                    case 4:
                         finish = false;
                         break;
 
