@@ -8,10 +8,10 @@ namespace LogicalPrograms
         {
             Console.WriteLine("----------Welcome To Basic Programs----------");
             bool finish = true;
-            Console.WriteLine("\n1.Fibonacci Series\n2.End the program");
+            Console.WriteLine("\n1.Fibonacci Series\n2.Perfect Number\n3.End the program");
             while (finish)
             {
-                Console.WriteLine("\nEnter an option to execute :");
+                Console.Write("\nEnter an option to execute :");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -20,6 +20,10 @@ namespace LogicalPrograms
                         fibo.Fibonacci();
                         break;
                     case 2:
+                        PerfectNumber number = new PerfectNumber();
+                        number.Perfect();
+                        break;
+                    case 3:
                         finish = false;
                         break;
 
