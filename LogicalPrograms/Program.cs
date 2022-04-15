@@ -6,9 +6,9 @@ namespace LogicalPrograms
     {
         static void Main(String[] args)
         {
-            Console.WriteLine("----------Welcome To Basic Programs----------");
+            Console.WriteLine("----------Welcome To Logical Programs----------");
             bool finish = true;
-            Console.WriteLine("\n1.Fibonacci Series\n2.Perfect Number\n3.Prime Number\n4.End the program");
+            Console.WriteLine("\n1.Fibonacci Series\n2.Perfect Number\n3.Prime Number\n4.Reverse a Number\n5.End the program");
             while (finish)
             {
                 Console.Write("\nEnter an option to execute :");
@@ -28,6 +28,10 @@ namespace LogicalPrograms
                         prime.Prime();
                         break;
                     case 4:
+                        ReverseNumber reverse = new ReverseNumber();
+                        reverse.Reverse();
+                        break;
+                    case 5:
                         finish = false;
                         break;
 
