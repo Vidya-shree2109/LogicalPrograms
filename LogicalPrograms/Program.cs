@@ -8,7 +8,7 @@ namespace LogicalPrograms
         {
             Console.WriteLine("----------Welcome To Logical Programs----------");
             bool finish = true;
-            Console.WriteLine("\n1.Fibonacci Series\n2.Perfect Number\n3.Prime Number\n4.Reverse a Number\n5.Coupon Number\n6.End the program");
+            Console.WriteLine("\n1.Fibonacci Series\n2.Perfect Number\n3.Prime Number\n4.Reverse a Number\n5.Coupon Number\n6.Stop Watch\n7.End the program");
             while (finish)
             {
                 Console.Write("\nEnter an option to execute :");
@@ -36,6 +36,10 @@ namespace LogicalPrograms
                         coupon.Coupon();
                         break;
                     case 6:
+                        StopWatch watch = new StopWatch();
+                        watch.StopWatchTime();
+                        break;
+                    case 7:
                         finish = false;
                         break;
 
