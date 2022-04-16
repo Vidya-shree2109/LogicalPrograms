@@ -8,7 +8,7 @@ namespace LogicalPrograms
         {
             Console.WriteLine("----------Welcome To Logical Programs----------");
             bool finish = true;
-            Console.WriteLine("\n1.Fibonacci Series\n2.Perfect Number\n3.Prime Number\n4.Reverse a Number\n5.End the program");
+            Console.WriteLine("\n1.Fibonacci Series\n2.Perfect Number\n3.Prime Number\n4.Reverse a Number\n5.Coupon Number\n6.End the program");
             while (finish)
             {
                 Console.Write("\nEnter an option to execute :");
@@ -32,6 +32,10 @@ namespace LogicalPrograms
                         reverse.Reverse();
                         break;
                     case 5:
+                        CouponNumber coupon = new CouponNumber();
+                        coupon.Coupon();
+                        break;
+                    case 6:
                         finish = false;
                         break;
 
